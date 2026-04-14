@@ -1,0 +1,84 @@
+# ================================================================
+#  .gitignore — Projet ML Chômage Diplômés Tunisiens
+# ================================================================
+
+# ── Dataset brut (trop lourd — 69 MB) ───────────────────────────
+*.sas7bdat
+ENPE_2017.csv
+
+# ── Données prétraitées numpy (recalculables depuis Phase 3) ─────
+X_train_res.npy
+X_test.npy
+y_train_res.npy
+y_test.npy
+
+# ── Modèles intermédiaires (garder seulement modele_final.pkl) ───
+resultats_modeles.pkl
+
+# ── Jupyter checkpoints ──────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# ── Python cache ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+
+# ── Environnements virtuels ──────────────────────────────────────
+.env
+venv/
+env/
+.venv/
+
+# ── Graphiques PNG générés (recalculables) ────────────────────────
+*.png
+*.jpg
+*.jpeg
+
+# ── OS ───────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ── IDE ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ── Logs et temporaires ──────────────────────────────────────────
+*.log
+logs/
+*.tmp
+*.temp
+~$*
+
+# ── Google Colab ─────────────────────────────────────────────────
+.config/
+sample_data/
+
+# ================================================================
+#  CE QU'ON GARDE SUR GITHUB ✅
+# ================================================================
+# notebooks/01_Phase1_Chargement.ipynb
+# notebooks/02_Phase2_EDA.ipynb
+# notebooks/03_Phase3_Preprocessing.ipynb
+# notebooks/04_Phase4_Modelisation.ipynb
+# notebooks/05_Phase5_Interpretabilite.ipynb
+# notebooks/06_Amelioration_Tentative.ipynb
+# src/app.py
+# models/modele_final.pkl
+# models/features.pkl
+# models/scaler.pkl
+# models/imputer.pkl
+# data/README_data.md
+# requirements.txt
+# README.md
+# Presentation.pdf
+# .gitignore
